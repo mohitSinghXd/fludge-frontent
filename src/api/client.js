@@ -3,7 +3,7 @@ import axios from 'axios';
 const API_BASE = import.meta.env.VITE_API_URL || 'https://fludge-backend.vercel.app/';
 
 const client = axios.create({
-  baseURL: `${API_BASE}/api`,
+  baseURL: `https://fludge-backend.vercel.app/api`,
 });
 
 client.interceptors.request.use((config) => {
